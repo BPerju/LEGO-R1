@@ -1,0 +1,5 @@
+In order to run the training script you first need to download the VLM-R1 project from:
+https://github.com/om-ai-lab/VLM-R1
+and then go inside the base directory and add the run_grpo_main.sh script from this folder.
+you should then go inside src/open-r1-multimodal/src/open_r1/vlm_modules/qwen_module.py and replace the qwen module with the one from this folder.
+Then you can run the run_grpo_main.sh script.
