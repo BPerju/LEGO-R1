@@ -1,5 +1,11 @@
-In order to run the training script you first need to download the VLM-R1 project from:
+In order to run the training script for grpo you first need to download the VLM-R1 project from:
 https://github.com/om-ai-lab/VLM-R1
 and then go inside the base directory and add the run_grpo_main.sh script from this folder.
 you should then go inside src/open-r1-multimodal/src/open_r1/vlm_modules/qwen_module.py and replace the qwen module with the one from this folder.
 Then you can run the run_grpo_main.sh script.
+
+Iteration 1 runs inference in the notebook.
+Iteration 2 uses LLamaFactory to run the training and inference for SFT.
+
+Paste the contents of qwen_data into the ARTA_LEGO folder after downloading it using the notebook.
+Use the generated data to run the training script using LLamaFactory. The generated data is interchangable with both the SFT and GRPO training scripts.
