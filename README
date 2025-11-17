@@ -14,6 +14,7 @@ Bachelor thesis investigating the application of Group Relative Policy Optimizat
 This research investigates applying GRPO to spatial tasks within the LEGO-ARTA dataset, comparing three models: a few-shot baseline (Qwen2.5VL-7B-Instruct), an SFT-trained reference model, and a GRPO-optimized model. Custom reward functions target reasoning format, spatial understanding, and object detection accuracy.
 
 **Key Results:**
+
 - GRPO achieved **7.7% IoU improvement** over baseline (65.49 vs 60.82)
 - Demonstrated superior spatial localization compared to SFT
 - Revealed critical trade-offs between spatial accuracy and textual precision
@@ -72,6 +73,7 @@ Use the generated data from `Qwen2.5-VL-DATA_WRANGLING.ipynb` - it's interchange
 ### Technical Configuration
 
 **Training:**
+
 - GPU: Single A100
 - LoRA rank: 8
 - Precision: bf16
@@ -80,6 +82,7 @@ Use the generated data from `Qwen2.5-VL-DATA_WRANGLING.ipynb` - it's interchange
 - Vision backbone: Frozen
 
 **Inference:**
+
 - GPU: Single A40
 - Batch size: 3
 - Max pixels: 2600
