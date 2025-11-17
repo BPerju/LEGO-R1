@@ -22,6 +22,7 @@ This research investigates applying GRPO to spatial tasks within the LEGO-ARTA d
 ## 📊 Reproducibility & Setup
 
 ### Prerequisites
+
 - Python 3.8+
 - CUDA-compatible GPU (A100 recommended for training, A40 for inference)
 - 24GB+ VRAM for training
@@ -35,6 +36,7 @@ cd VLM-R1
 ```
 
 **2. Add GRPO Training Script**
+
 Copy `run_grpo_main.sh` from this repository to the VLM-R1 base directory.
 
 **3. Replace Qwen Module**
@@ -50,7 +52,7 @@ cp iteration2/qwen_module.py qwen_module.py
 ```bash
 # Download LEGO-ARTA using the provided notebook
 # Then copy generated data
-cp -r /qwen_data/* /path/to/ARTA_LEGO/
+cp -r qwen_data/* /ARTA_LEGO/
 ```
 
 ### Training
@@ -61,6 +63,7 @@ bash run_grpo_main.sh
 ```
 
 **SFT Training (via LLaMA-Factory):**
+
 Use the generated data from `Qwen2.5-VL-DATA_WRANGLING.ipynb` - it's interchangeable between SFT and GRPO training.
 
 **Iteration 1:** Runs inference using the provided notebook  
@@ -95,4 +98,3 @@ Use the generated data from `Qwen2.5-VL-DATA_WRANGLING.ipynb` - it's interchange
 - [LEGO-ARTA Dataset](https://arxiv.org/abs/2507.05515)
 - [VLM-R1 Project](https://github.com/om-ai-lab/VLM-R1)
 - [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory)
-
